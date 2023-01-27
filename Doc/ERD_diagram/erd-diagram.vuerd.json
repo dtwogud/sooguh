@@ -11,7 +11,7 @@
       "columnComment": true,
       "columnDataType": true,
       "columnDefault": true,
-      "columnAutoIncrement": false,
+      "columnAutoIncrement": true,
       "columnPrimaryKey": true,
       "columnUnique": false,
       "columnNotNull": true,
@@ -48,11 +48,11 @@
         "columns": [
           {
             "name": "idx",
-            "comment": "index, auto-increase",
+            "comment": "index",
             "dataType": "INT",
             "default": "",
             "option": {
-              "autoIncrement": false,
+              "autoIncrement": true,
               "primaryKey": true,
               "unique": false,
               "notNull": true
@@ -63,7 +63,7 @@
               "fk": false,
               "pfk": false,
               "widthName": 60,
-              "widthComment": 119.06982421875,
+              "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
             },
@@ -120,7 +120,7 @@
           "active": false,
           "left": 200,
           "top": 100,
-          "zIndex": 112,
+          "zIndex": 11,
           "widthName": 60,
           "widthComment": 60
         },
@@ -137,7 +137,7 @@
             "dataType": "INT",
             "default": "",
             "option": {
-              "autoIncrement": false,
+              "autoIncrement": true,
               "primaryKey": true,
               "unique": false,
               "notNull": false
@@ -294,10 +294,10 @@
           }
         ],
         "ui": {
-          "active": true,
-          "left": 222.4,
-          "top": 390,
-          "zIndex": 162,
+          "active": false,
+          "left": 192.4,
+          "top": 404.4,
+          "zIndex": 14,
           "widthName": 60,
           "widthComment": 67
         },
@@ -321,7 +321,7 @@
           "columnIds": [
             "04ddacbe-5894-4102-874e-72389146fd1b"
           ],
-          "x": 418.248779296875,
+          "x": 398.7138671875,
           "y": 230.5,
           "direction": "bottom"
         },
@@ -330,8 +330,8 @@
           "columnIds": [
             "8a00cd30-c4b9-4027-93f2-3100222bc9f2"
           ],
-          "x": 417.1529296875,
-          "y": 390,
+          "x": 397.1529296875,
+          "y": 404.4,
           "direction": "top"
         },
         "constraintName": "fk_region_to_",
