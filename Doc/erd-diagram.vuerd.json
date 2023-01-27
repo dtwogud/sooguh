@@ -1,0 +1,343 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "region",
+        "comment": "지역 정보",
+        "columns": [
+          {
+            "name": "idx",
+            "comment": "index, auto-increase",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 119.06982421875,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "04ddacbe-5894-4102-874e-72389146fd1b"
+          },
+          {
+            "name": "admin_section",
+            "comment": "행정동",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 85.8271484375,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "7444ed55-c83b-4526-bb5f-725ce7ed577d"
+          },
+          {
+            "name": "area",
+            "comment": "지역",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "a658e943-5dc4-4e85-8a48-a8b3f58d89dd"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 200,
+          "top": 100,
+          "zIndex": 112,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "20451871-aba6-4dcc-9e06-88e003ca01d3"
+      },
+      {
+        "name": "box",
+        "comment": "의료수거함",
+        "columns": [
+          {
+            "name": "idx",
+            "comment": "index",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "805e4dc5-57f1-4cfb-8246-0049ab2f3e91"
+          },
+          {
+            "name": "section_id",
+            "comment": "행정동 id",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60.5380859375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "8a00cd30-c4b9-4027-93f2-3100222bc9f2"
+          },
+          {
+            "name": "location",
+            "comment": "상세위치",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "8c7a0802-847b-4df0-a505-bb9379f9feef"
+          },
+          {
+            "name": "lat",
+            "comment": "위도",
+            "dataType": "FLOAT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "827d3870-d54e-4ad9-98ca-ade6fdd842b7"
+          },
+          {
+            "name": "long",
+            "comment": "경도",
+            "dataType": "FLOAT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "a197c093-3b10-4529-8b63-0f2bb925d84c"
+          },
+          {
+            "name": "is_valid",
+            "comment": "사용가능 여부",
+            "dataType": "BOOL",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 83.61181640625,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "0ee0aa93-813e-464f-bc71-b3623be83588"
+          },
+          {
+            "name": "update_date",
+            "comment": "기준일자",
+            "dataType": "DATE",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 74.29345703125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "404c711c-42f4-4ec5-887b-f6f0b8f65d5e"
+          }
+        ],
+        "ui": {
+          "active": true,
+          "left": 222.4,
+          "top": 390,
+          "zIndex": 162,
+          "widthName": 60,
+          "widthComment": 67
+        },
+        "visible": true,
+        "id": "415864b7-8059-4b17-80c0-17acfc8a3667"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "20451871-aba6-4dcc-9e06-88e003ca01d3",
+          "columnIds": [
+            "04ddacbe-5894-4102-874e-72389146fd1b"
+          ],
+          "x": 418.248779296875,
+          "y": 230.5,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "415864b7-8059-4b17-80c0-17acfc8a3667",
+          "columnIds": [
+            "8a00cd30-c4b9-4027-93f2-3100222bc9f2"
+          ],
+          "x": 417.1529296875,
+          "y": 390,
+          "direction": "top"
+        },
+        "constraintName": "fk_region_to_",
+        "visible": true,
+        "id": "a436a274-995a-402e-931e-4317e9c4822b"
+      }
+    ]
+  }
+}
